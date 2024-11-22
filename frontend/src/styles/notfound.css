@@ -1,0 +1,52 @@
+/* Container styling for center alignment */
+.not-found-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+    background-color: #f8f9fa; /* Light gray background */
+    padding: 20px;
+  }
+  
+  /* 404 title styling */
+  .not-found-title {
+    font-size: 8rem;
+    font-weight: bold;
+    color: #343a40; /* Dark gray */
+    margin-bottom: 20px;
+  }
+  
+  /* Message styling */
+  .not-found-message {
+    font-size: 1.5rem;
+    color: #6c757d; /* Medium gray */
+    margin-bottom: 30px;
+  }
+  
+  /* Button styling */
+  .home-button {
+    display: inline-block;
+    padding: 12px 24px;
+    font-size: 1.2rem;
+    color: #fff;
+    background-color: #007bff; /* Blue color */
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.2s;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  }
+  
+  /* Hover effect for button */
+  .home-button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    transform: translateY(-2px); /* Slight lift on hover */
+  }
+  
+  /* Focus effect for accessibility */
+  .home-button:focus {
+    outline: 2px solid #0056b3;
+    outline-offset: 2px;
+  }
+  

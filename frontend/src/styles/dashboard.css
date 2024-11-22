@@ -1,0 +1,143 @@
+/* Dashboard container styles */
+.dashboard-container {
+    display: flex;
+    min-height: 100vh;
+    background-color: #f9f9f9;
+}
+
+/* Left navigation styles */
+.dashboard-nav {
+    width: 20%;
+    padding: 1rem;
+    background-color: #f4f4f4;
+}
+
+.dashboard-nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.dashboard-nav li {
+    padding: 10px 0;
+}
+
+/* Styling for buttons inside <li> */
+.dashboard-nav button {
+    width: 100%;
+    padding: 12px;
+    background-color: #0077b5;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    text-align: left;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.dashboard-nav button:hover {
+    background-color: #005f8b;
+    transform: scale(1.05);
+}
+
+.dashboard-nav button:active {
+    background-color: #004d6b;
+    transform: scale(0.95);
+}
+
+.dashboard-nav li+li {
+    margin-top: 10px;
+}
+
+/* Right content area styles */
+.dashboard-content {
+    width: 80%;
+    padding: 1rem;
+}
+
+.dashboard-content h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Contact list styles */
+.contact-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.contact-item {
+    margin-bottom: 1rem;
+    padding: 1rem;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-item p {
+    margin: 5px 0;
+    color: #555;
+}
+
+.contact-item strong {
+    color: #0077b5;
+}
+
+/* Load more button styles */
+.load-more-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color: #0077b5;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.load-more-btn:hover {
+    background-color: #005582;
+    transform: scale(1.05);
+}
+
+.load-more-btn:active {
+    transform: scale(0.95);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .dashboard-container {
+        flex-direction: column;
+    }
+
+    .dashboard-nav,
+    .dashboard-content {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .dashboard-nav li {
+        font-size: 1rem;
+    }
+
+    .dashboard-content h2 {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .dashboard-nav {
+        width: 100%;
+    }
+
+    .contact-item {
+        padding: 0.8rem;
+    }
+
+    .load-more-btn {
+        font-size: 0.9rem;
+    }
+}
